@@ -10,7 +10,7 @@ as the database. The API allow users to register and login to create, retrieve, 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/Amit-Singh-14/NoteTaking-API.git
    ```
 
 2. Install dependencies
