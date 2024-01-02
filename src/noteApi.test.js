@@ -151,7 +151,7 @@ describe("Note Taking Api Testing", () => {
           // console.log(body);
           expect(body.statusCode).toBe(200);
           expect(body.data.title).toBe("newtestTile");
-          expect(body.message).toBe("Note successfully updated");
+          expect(body.message).toBe("note successfully updated");
         });
 
         it("Not update note when noteid is not provided", async () => {
@@ -189,7 +189,7 @@ describe("Note Taking Api Testing", () => {
           // console.log(body);
           expect(body.statusCode).toBe(200);
           // expect(body.data.title).toBe("newtestTile");
-          expect(body.message).toBe("Note deleted");
+          expect(body.message).toBe("note deleted");
         });
 
         it("Not delete note when noteid not provided", async () => {
