@@ -83,7 +83,7 @@ Path: http://localhost:3000/api/v1/users/login
 }
 ```
 
-# Authenticated Routes only
+# Authenticated Routes only (Logged In)
 
 ### 3. Logout User
 
@@ -171,10 +171,10 @@ Path: http://localhost:3000/api/v1/notes/getnotes
 ### 6. Get Note (option 2 => id)
 
 - Method: GET
-- Request Parmas : noteid
+- Request Parmas : ${noteid}
 
 ```
-Path: http://localhost:3000/api/v1/notes/getnotes/noteid
+Path: http://localhost:3000/api/v1/notes/getnotes/${noteid}
 ```
 
 - response :
@@ -200,10 +200,10 @@ Path: http://localhost:3000/api/v1/notes/getnotes/noteid
 
 - Method: PATCH
 - Request Body: { title : optional, content : optional }
-- Request Parmas : noteid (reequired)
+- Request Parmas : ${noteid} (required)
 
 ```
-Path: http://localhost:3000/api/v1/notes/updatenote/noteid
+Path: http://localhost:3000/api/v1/notes/updatenote/${noteid}
 ```
 
 - response :
@@ -228,10 +228,10 @@ Path: http://localhost:3000/api/v1/notes/updatenote/noteid
 ### 8. Delete Note
 
 - Method: DELETE
-- Request Parmas : noteid (reequired)
+- Request Parmas : ${noteid} (required)
 
 ```
-Path: http://localhost:3000/api/v1/notes/deletenote/noteid
+Path: http://localhost:3000/api/v1/notes/deletenote/${noteid}
 ```
 
 - response :
